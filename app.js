@@ -21,8 +21,13 @@ mongoose
         console.log("error", error);
     })
 
+//Home router
 const home = require('./routes/home.router');
 app.use('/', home)
+
+//User router
+const user = require('./routes/user.router');
+app.use('/', user)
 
 app.listen(port, () => {
     console.log('localhost:' + port);

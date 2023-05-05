@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View User</title>
+    <link rel="stylesheet" href="/css/userView.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a class="active" href="/viewUser">User</a>
+    </div>
+
+    <div class="container-fluid">
+        <h2 id="title">User Table</h2>
+        <a href="/register" class="button">Add new User</a>
+        <table>
+            <thead>
+                <th class="col-xs-3">Full Name</th>
+                <th class="col-xs-3">Email</th>
+                <th class="col-xs-3">Phone</th>
+                <th class="col-xs-3">Image</th>
+                <th class="col-xs-3">Date of Birth</th>
+                <th class="col-xs-3">Actions</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-xs-3">Name</td>
+                    <td class="col-xs-3">Email</td>
+                    <td class="col-xs-3">Phone Number</td>
+                    <td class="col-xs-3">Image</td>
+                    <td class="col-xs-3">Date of Birth</td>
+                    <td class="col-xs-3">
+                        <button class="btn btn-danger">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

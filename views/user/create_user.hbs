@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a class="active" href="/viewUser">User</a>
+    </div>
+    <h3>Register</h3>
+    <div>
+        <form action="/register">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name..">
+            <label for="lname">Email</label>
+            <input type="text" id="lname" name="email" placeholder="Your email..">
+            <label for="fname">Image</label>
+            <input type="text" id="fname" name="picture" placeholder="Your image..">
+            <label for="fname">Phone Number</label>
+            <input type="text" id="fname" name="phone" placeholder="Your phone..">
+            <label for="country">Date of Birth</label>
+            <br>
+            <input type="date" id="fname" name="dob" placeholder="Your date of birth..">
+            <br>
+            <label for="fname">Password</label>
+            <input type="text" id="fname" name="password" placeholder="Your password..">
+            {{!-- <label for="fname">Confirm Password</label>
+            <input type="text" id="fname" name="name" placeholder="Your name.."> --}}
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
