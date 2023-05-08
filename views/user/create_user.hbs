@@ -15,25 +15,25 @@
         <a href="/">Home</a>
         <a class="active" href="/viewUser">User</a>
     </div>
-    <h3>Register</h3>
-    <div>
-        <form action="/register">
+    <h3>Create new User</h3>
+    <div class="form-control">
+        <form action="/createUser" method="post">
             <label for="fname">Full Name</label>
             <input type="text" id="fname" name="name" placeholder="Your name..">
-            <label for="lname">Email</label>
-            <input type="text" id="lname" name="email" placeholder="Your email..">
-            <label for="fname">Image</label>
-            <input type="text" id="fname" name="picture" placeholder="Your image..">
-            <label for="fname">Phone Number</label>
-            <input type="text" id="fname" name="phone" placeholder="Your phone..">
-            <label for="country">Date of Birth</label>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email.." required>
+            <label for="image">Image</label>
+            <input type="text" id="image" name="picture" placeholder="Your image..">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+            <label for="Dob">Date of Birth</label>
             <br>
-            <input type="date" id="fname" name="dob" placeholder="Your date of birth..">
+            <input type="date" id="Dob" name="dob" placeholder="Your date of birth..">
             <br>
-            <label for="fname">Password</label>
-            <input type="text" id="fname" name="password" placeholder="Your password..">
-            {{!-- <label for="fname">Confirm Password</label>
-            <input type="text" id="fname" name="name" placeholder="Your name.."> --}}
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password.." required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="password" name="confirm" placeholder="Confirm your password.." required>
             <input type="submit" value="Submit">
         </form>
     </div>

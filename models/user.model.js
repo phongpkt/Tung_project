@@ -21,7 +21,7 @@ const UserSchema = new Schema({
         type: String
     },
     dob: {
-        type: Date
+        type: String
     },
     password: { 
         type: String,

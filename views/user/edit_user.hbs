@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a class="active" href="/viewUser">User</a>
+    </div>
+    <h3>Edit user Information</h3>
+    <div class="form-control">
+        <form action="/editUser" method="post">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name..">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email.." required>
+            <label for="image">Image</label>
+            <input type="text" id="image" name="picture" placeholder="Your image..">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+            <label for="Dob">Date of Birth</label>
+            <br>
+            <input type="date" id="Dob" name="dob" placeholder="Your date of birth..">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password.." required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="password" name="confirm" placeholder="Confirm your password.." required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

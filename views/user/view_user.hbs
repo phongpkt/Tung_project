@@ -17,8 +17,8 @@
     </div>
 
     <div class="container-fluid">
-        <h2 id="title">User Table</h2>
-        <a href="/register" class="button">Add new User</a>
+        <h2 id="title">List of Users</h2>
+        <a href="/createUser" class="button">Add new User</a>
         <table>
             <thead>
                 <th class="col-xs-3">Full Name</th>
@@ -29,17 +29,19 @@
                 <th class="col-xs-3">Actions</th>
             </thead>
             <tbody>
+                {{#each user}}
                 <tr>
-                    <td class="col-xs-3">Name</td>
-                    <td class="col-xs-3">Email</td>
-                    <td class="col-xs-3">Phone Number</td>
-                    <td class="col-xs-3">Image</td>
-                    <td class="col-xs-3">Date of Birth</td>
+                    <td class="col-xs-3">{{name}}</td>
+                    <td class="col-xs-3">{{email}}</td>
+                    <td class="col-xs-3">{{phone}}</td>
+                    <td class="col-xs-3 picture"><img src="{{picture}}" alt="profile picture"></td>
+                    <td class="col-xs-3">{{dob}}</td>
                     <td class="col-xs-3">
-                        <button class="btn btn-danger">Edit</button>
-                        <button class="btn btn-danger">Delete</button>
+                        <a href="/editUser"><button class="btn btn-danger">Edit</button></a>
+                        <a href="/deleteUser"><button class="btn btn-danger">Delete</button></a>
                     </td>
                 </tr>
+                {{/each}}
             </tbody>
         </table>
     </div>

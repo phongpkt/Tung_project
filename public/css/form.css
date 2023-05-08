@@ -1,5 +1,37 @@
-input[type=text],
-select {
+body h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.form-control {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 60%;
+    padding: 25px;
+    margin-left: 300px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
